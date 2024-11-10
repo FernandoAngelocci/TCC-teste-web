@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Educativo</title>
+    <!-- Incluindo Firebase diretamente -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-analytics.js"></script>
+    <style>
+        /* Adicione seu estilo aqui */
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Bem-vindo ao Quiz Educativo</h1>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required>
+        
+        <label for="serie">Série:</label>
+        <select id="serie">
+            <option value="5º ano">5º ano</option>
+            <option value="6º ano">6º ano</option>
+            <option value="7º ano">7º ano</option>
+            <option value="8º ano">8º ano</option>
+            <option value="9º ano">9º ano</option>
+        </select>
+        
+        <button id="iniciarJogo">Iniciar Jogo</button>
+    </div>
+    
+    <div id="gameArea" style="display:none;">
+        <div id="question"></div>
+        <div id="options"></div>
+        <div id="timer"></div>
+    </div>
+
+    <script>
+        // Configuração do Firebase
+        const firebaseConfig = {
+            apiKey: "AIzaSyCajdNXdj_ku2ed4Z1k_pzHOBirB0Mq96s",
+            authDomain: "quiz-educa.firebaseapp.com",
+            databaseURL: "https://quiz-educa-default-rtdb.firebaseio.com",
+            projectId: "quiz-educa",
+            storageBucket: "quiz-educa.firebasestorage.app",
+            messagingSenderId: "115951499136",
+            appId: "1:115951499136:web:583eaf8035d90691497365",
+            measurementId: "G-MKBHCFG7N6"
+        };
+
+        // Inicializa o Firebase
+        firebase.initializeApp(firebaseConfig);
+        const database = firebase.database();
+
+        // Lógica do jogo
+        let timePerQuestion = 20;
+        let currentQuestionIndex = 0;
+        let score = 0;
+        let timer;
+
+        const questions = [
+            {
+                question: "Qual é a capital do Brasil?",
+                options: ["São Paulo", "Brasília", "Rio de Janeiro", "Salvador"],
+                answer: 1
+            },
+            {
+                question: "Quantos estados tem o Brasil?",
+                options: ["25", "26", "27", "24"],
+                answer: 2
+            },
+            // Adicione mais perguntas conforme necessário
+        ];
+
+        document.getElementById('iniciarJogo').addEventListener('click', function() {
+            const nome = document.getElementById('nome').value;
+            const serie = document.getElementById('serie').value;
+
+            if (nome === "") {
+                alert("Por favor, insira seu nome.");
+                return;
+            }
+
+            // Salvar dados do jogador no Firebase
+            const jogadorRef = database.ref('jogadores').push();
+            jogadorRef.set({
+                nome: nome,
+                serie: serie,
+                pontuacao: 0 // Inicializa a pontuação do jogador
+            }).then(() => {
+                console.log('Jogador salvo com sucesso!');
+                startGame();
+            }).catch((error) => {
+                console.error('Erro ao salvar jogador:', error);
+            });
+        });
+
+        function startGame() {
+            currentQuestionIndex = 0;
+            score = 0;
+            document.getElementById('gameArea').style.display = 'block'; // Mostra a área do jogo
+            showQuestion();
+        }
+
+        function showQuestion() {
+            if (currentQuestionIndex < questions.length) {
+                const questionElement = document.getElementById('question');
+                const optionsElement = document.getElementById('options');
+                const currentQuestion = questions[currentQuestionIndex];
+
+                questionElement.textContent = currentQuestion.question;
+                optionsElement.innerHTML = "";
+
+                currentQuestion.options.forEach((option, index) => {
+                    const button = document.createElement('button');
+                    button.textContent = option;
+                    button.onclick = () => selectOption(index);
+                    optionsElement.appendChild(button);
+                });
+
+                startTimer();
+            } else {
+                endGame();
+            }
+        }
+
+        function selectOption(selectedIndex) {
+            clearInterval(timer);
+            const correctIndex = questions[currentQuestionIndex].answer;
+
+            if (selectedIndex === correctIndex) {
+                score += timePerQuestion; // Adiciona pontuação pelo tempo restante
+            }
+
+            currentQuestionIndex++;
+            showQuestion();
+        }
+
+        function startTimer() {
+            let timeLeft = timePerQuestion;
+            const timerElement = document.getElementById('timer');
+            
+            timerElement.textContent = `Tempo: ${timeLeft}`;
+
+            timer = setInterval(() => {
+                timeLeft--;
+                timerElement.textContent = `Tempo: ${timeLeft}`;
+
+                if (timeLeft <= 0) {
+                    clearInterval(timer);
+                    selectOption(-1); // Considera como uma resposta errada
+                }
+            }, 1000);
+        }
+
+        function endGame() {
+            alert(`Fim do jogo! Sua pontuação é: ${score}`);
+            // Aqui você pode salvar a pontuação no Firebase ou redirecionar
+        }
+    </script>
+</body>
+</html>

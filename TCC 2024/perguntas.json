@@ -1,0 +1,439 @@
+{
+  "perguntas": {
+    "5ano": {
+      "portugues": {
+        "questoes": [
+          {
+            "questao": "Qual é a função do verbo em uma frase?",
+            "respostas": ["Indicar uma ação", "Indicar um objeto", "Descrever um lugar", "Indicar um adjetivo"],
+            "correta": 0
+          },
+          {
+            "questao": "Qual é o sujeito da frase: 'Maria comeu uma maçã'?",
+            "respostas": ["Maria", "comeu", "uma", "maçã"],
+            "correta": 0
+          }
+        ]
+      },
+      "historia": {
+        "questoes": [
+          {
+            "questao": "Qual foi o primeiro presidente do Brasil?",
+            "respostas": ["Dom Pedro I", "Marechal Deodoro da Fonseca", "Getúlio Vargas", "Juscelino Kubitschek"],
+            "correta": 1
+          },
+          {
+            "questao": "Em que ano o Brasil se tornou independente?",
+            "respostas": ["1822", "1889", "1500", "1930"],
+            "correta": 0
+          }
+        ]
+      },
+      "geografia": {
+        "questoes": [
+          {
+            "questao": "Qual é o maior estado do Brasil em área?",
+            "respostas": ["Minas Gerais", "Amazonas", "São Paulo", "Bahia"],
+            "correta": 1
+          },
+          {
+            "questao": "Qual é a capital do Brasil?",
+            "respostas": ["São Paulo", "Rio de Janeiro", "Brasília", "Salvador"],
+            "correta": 2
+          }
+        ]
+      },
+      "ciencias": {
+        "questoes": [
+          {
+            "questao": "O que é fotossíntese?",
+            "respostas": [
+              "Processo pelo qual as plantas respiram",
+              "Processo pelo qual as plantas produzem alimento",
+              "Processo de decomposição das folhas",
+              "Processo de absorção de água pelas raízes"
+            ],
+            "correta": 1
+          },
+          {
+            "questao": "Qual dos seguintes é um líquido vital para a vida?",
+            "respostas": ["Água", "Terra", "Ar", "Fogo"],
+            "correta": 0
+          }
+        ]
+      },
+      "artes": {
+        "questoes": [
+          {
+            "questao": "Quem pintou a Mona Lisa?",
+            "respostas": ["Michelangelo", "Leonardo da Vinci", "Rafael", "Donatello"],
+            "correta": 1
+          },
+          {
+            "questao": "Qual movimento artístico é associado a Van Gogh?",
+            "respostas": ["Impressionismo", "Surrealismo", "Cubismo", "Renascentismo"],
+            "correta": 0
+          }
+        ]
+      },
+      "matematica": {
+        "questoes": [
+          {
+            "questao": "Quanto é 7 x 8?",
+            "respostas": ["54", "56", "58", "64"],
+            "correta": 1
+          },
+          {
+            "questao": "Qual é a raiz quadrada de 49?",
+            "respostas": ["5", "6", "7", "8"],
+            "correta": 2
+          }
+        ]
+      }
+    },
+    "6ano": {
+      "portugues": {
+        "questoes": [
+          {
+            "questao": "O que é um adjetivo?",
+            "respostas": ["Palavra que descreve um verbo", "Palavra que descreve um substantivo", "Palavra que indica uma ação", "Palavra que indica um lugar"],
+            "correta": 1
+          },
+          {
+            "questao": "Qual das frases abaixo está correta?",
+            "respostas": ["Ele foi eu", "Eu fui", "Ela são", "Eles vai"],
+            "correta": 1
+          }
+        ]
+      },
+      "historia": {
+        "questoes": [
+          {
+            "questao": "Quem foi o principal líder da Revolução Francesa?",
+            "respostas": ["Napoleão Bonaparte", "Maximilien Robespierre", "Louis XVI", "George Washington"],
+            "correta": 1
+          },
+          {
+            "questao": "Qual foi a principal causa da Primeira Guerra Mundial?",
+            "respostas": ["A queda da bolsa", "Imperialismo", "Nacionalismo", "A morte de um arquiduque"],
+            "correta": 3
+          }
+        ]
+      },
+      "geografia": {
+        "questoes": [
+          {
+            "questao": "Qual é o continente onde se localiza o Brasil?",
+            "respostas": ["Ásia", "África", "América", "Europa"],
+            "correta": 2
+          },
+          {
+            "questao": "Qual é o rio mais longo do mundo?",
+            "respostas": ["Nilo", "Amazonas", "Yangtze", "Mississippi"],
+            "correta": 1
+          }
+        ]
+      },
+      "ciencias": {
+        "questoes": [
+          {
+            "questao": "Qual é a função das raízes das plantas?",
+            "respostas": ["Produzir folhas", "Produzir flores", "Absorver água e nutrientes", "Realizar a fotossíntese"],
+            "correta": 2
+          },
+          {
+            "questao": "O que é um ecossistema?",
+            "respostas": ["Conjunto de organismos vivos e seu ambiente", "Grupo de animais", "Grupo de plantas", "Um tipo de solo"],
+            "correta": 0
+          }
+        ]
+      },
+      "artes": {
+        "questoes": [
+          {
+            "questao": "Qual é a técnica utilizada na pintura a óleo?",
+            "respostas": ["Aquarela", "Acrílico", "Óleo sobre tela", "Giz"],
+            "correta": 2
+          },
+          {
+            "questao": "Qual dos seguintes é um tipo de escultura?",
+            "respostas": ["Mosaico", "Frescos", "Estátua", "Pintura"],
+            "correta": 2
+          }
+        ]
+      },
+      "matematica": {
+        "questoes": [
+          {
+            "questao": "Quanto é 12 x 12?",
+            "respostas": ["144", "156", "128", "136"],
+            "correta": 0
+          },
+          {
+            "questao": "Qual é 25% de 200?",
+            "respostas": ["25", "50", "75", "100"],
+            "correta": 1
+          }
+        ]
+      }
+    },
+    "7ano": {
+      "portugues": {
+        "questoes": [
+          {
+            "questao": "O que é uma crônica?",
+            "respostas": ["Um poema", "Um texto que narra fatos do cotidiano", "Uma notícia", "Uma história em quadrinhos"],
+            "correta": 1
+          },
+          {
+            "questao": "Qual é o antônimo de 'feliz'?",
+            "respostas": ["Triste", "Sorridente", "Contente", "Animado"],
+            "correta": 0
+          }
+        ]
+      },
+      "historia": {
+        "questoes": [
+          {
+            "questao": "Quem descobriu o Brasil?",
+            "respostas": ["Pedro Álvares Cabral", "Cristóvão Colombo", "Vasco da Gama", "Fernão de Magalhães"],
+            "correta": 0
+          },
+          {
+            "questao": "Qual era o nome do imperador romano durante a crucificação de Jesus?",
+            "respostas": ["Nero", "Augusto", "Tibério", "Cláudio"],
+            "correta": 2
+          }
+        ]
+      },
+      "geografia": {
+        "questoes": [
+          {
+            "questao": "Qual é o clima predominante no Brasil?",
+            "respostas": ["Tropical", "Polar", "Desértico", "Mediterrâneo"],
+            "correta": 0
+          },
+          {
+            "questao": "Qual é a capital da França?",
+            "respostas": ["Berlim", "Madri", "Paris", "Lisboa"],
+            "correta": 2
+          }
+        ]
+      },
+      "ciencias": {
+        "questoes": [
+          {
+            "questao": "O que é uma célula?",
+            "respostas": ["Unidade básica da vida", "Parte de um organismo", "Um tipo de bactéria", "Um tipo de vírus"],
+            "correta": 0
+          },
+          {
+            "questao": "Qual é a função do sistema circulatório?",
+            "respostas": ["Transportar oxigênio e nutrientes", "Proteger o corpo", "Controlar a temperatura", "Realizar a digestão"],
+            "correta": 0
+          }
+        ]
+      },
+      "artes": {
+        "questoes": [
+          {
+            "questao": "Qual é a técnica utilizada na gravura?",
+            "respostas": ["Aquarela", "Corte de matriz", "Desenho a lápis", "Pintura a óleo"],
+            "correta": 1
+          },
+          {
+            "questao": "Qual é o estilo musical associado a Beethoven?",
+            "respostas": ["Clássico", "Romântico", "Barroco", "Moderno"],
+            "correta": 1
+          }
+        ]
+      },
+      "matematica": {
+        "questoes": [
+          {
+            "questao": "Quanto é 15 x 4?",
+            "respostas": ["55", "60", "45", "40"],
+            "correta": 3
+          },
+          {
+            "questao": "Qual é a fórmula da área do triângulo?",
+            "respostas": ["Base x Altura", "Base x Altura / 2", "2 x Base x Altura", "Base + Altura"],
+            "correta": 1
+          }
+        ]
+      }
+    },
+    "8ano": {
+      "portugues": {
+        "questoes": [
+          {
+            "questao": "O que é uma metáfora?",
+            "respostas": ["Comparação direta entre duas coisas", "Descrição literal", "Um tipo de rima", "Um poema"],
+            "correta": 0
+          },
+          {
+            "questao": "Qual é a função da crase?",
+            "respostas": ["Indicar posse", "Indicar contração", "Indicar plural", "Indicar singular"],
+            "correta": 1
+          }
+        ]
+      },
+      "historia": {
+        "questoes": [
+          {
+            "questao": "Qual é o significado da Revolução Industrial?",
+            "respostas": ["Mudança de estilo de vida", "Invenção de novas tecnologias", "Aumento da população", "Redução do trabalho manual"],
+            "correta": 3
+          },
+          {
+            "questao": "Quem foi a Rainha da Inglaterra durante a época vitoriana?",
+            "respostas": ["Elizabeth I", "Victoria", "Anne", "Mary"],
+            "correta": 1
+          }
+        ]
+      },
+      "geografia": {
+        "questoes": [
+          {
+            "questao": "Qual é o maior continente do mundo?",
+            "respostas": ["África", "Ásia", "América", "Europa"],
+            "correta": 1
+          },
+          {
+            "questao": "Qual é a capital da Itália?",
+            "respostas": ["Roma", "Milão", "Veneza", "Nápoles"],
+            "correta": 0
+          }
+        ]
+      },
+      "ciencias": {
+        "questoes": [
+          {
+            "questao": "Qual é a fórmula da água?",
+            "respostas": ["CO2", "O2", "H2O", "NaCl"],
+            "correta": 2
+          },
+          {
+            "questao": "O que são organismos autotróficos?",
+            "respostas": ["Organismos que se alimentam de outros", "Organismos que produzem seu próprio alimento", "Organismos que vivem em água", "Organismos que não precisam de luz"],
+            "correta": 1
+          }
+        ]
+      },
+      "artes": {
+        "questoes": [
+          {
+            "questao": "Quem é conhecido como o pai do modernismo?",
+            "respostas": ["Fernando Pessoa", "Tarsila do Amaral", "Mário de Andrade", "Cândido Portinari"],
+            "correta": 2
+          },
+          {
+            "questao": "Qual é o instrumento musical de cordas mais comum?",
+            "respostas": ["Piano", "Guitarra", "Violino", "Flauta"],
+            "correta": 1
+          }
+        ]
+      },
+      "matematica": {
+        "questoes": [
+          {
+            "questao": "Quanto é 60 / 5?",
+            "respostas": ["12", "10", "15", "8"],
+            "correta": 1
+          },
+          {
+            "questao": "Qual é a soma de 150 + 350?",
+            "respostas": ["400", "500", "450", "300"],
+            "correta": 1
+          }
+        ]
+      }
+    },
+    "9ano": {
+      "portugues": {
+        "questoes": [
+          {
+            "questao": "Qual é o foco de um texto argumentativo?",
+            "respostas": ["Convencer o leitor", "Informar", "Entreter", "Narrar"],
+            "correta": 0
+          },
+          {
+            "questao": "O que é um ensaio?",
+            "respostas": ["Um tipo de poema", "Uma análise crítica", "Uma narrativa fictícia", "Uma biografia"],
+            "correta": 1
+          }
+        ]
+      },
+      "historia": {
+        "questoes": [
+          {
+            "questao": "Qual foi o impacto da Guerra Fria?",
+            "respostas": ["Divisão do mundo em blocos", "Descolonização", "Globalização", "Aumento da produção industrial"],
+            "correta": 0
+          },
+          {
+            "questao": "Qual era a principal ideologia do comunismo?",
+            "respostas": ["Liberdade individual", "Propriedade coletiva", "Livre mercado", "Nacionalismo"],
+            "correta": 1
+          }
+        ]
+      },
+      "geografia": {
+        "questoes": [
+          {
+            "questao": "Qual é o maior rio do Brasil?",
+            "respostas": ["Paraná", "São Francisco", "Amazonas", "Tocantins"],
+            "correta": 2
+          },
+          {
+            "questao": "Qual é a capital do Japão?",
+            "respostas": ["Tóquio", "Pequim", "Seul", "Bangcoc"],
+            "correta": 0
+          }
+        ]
+      },
+      "ciencias": {
+        "questoes": [
+          {
+            "questao": "O que é a fotossíntese?",
+            "respostas": ["Processo de respiração das plantas", "Processo de transformação de energia solar em química", "Um tipo de reprodução", "Um processo de decomposição"],
+            "correta": 1
+          },
+          {
+            "questao": "Qual é a unidade de medida da força?",
+            "respostas": ["Joule", "Newton", "Pascal", "Watt"],
+            "correta": 1
+          }
+        ]
+      },
+      "artes": {
+        "questoes": [
+          {
+            "questao": "Qual movimento artístico é associado a Picasso?",
+            "respostas": ["Impressionismo", "Cubismo", "Expressionismo", "Barroco"],
+            "correta": 1
+          },
+          {
+            "questao": "Qual é o estilo musical do Rock?",
+            "respostas": ["Clássico", "Popular", "Folk", "Eletrônico"],
+            "correta": 1
+          }
+        ]
+      },
+      "matematica": {
+        "questoes": [
+          {
+            "questao": "Qual é a fórmula para calcular a área de um círculo?",
+            "respostas": ["πr^2", "2πr", "πd", "r^2"],
+            "correta": 0
+          },
+          {
+            "questao": "Quanto é 90 - 45?",
+            "respostas": ["55", "45", "50", "60"],
+            "correta": 0
+          }
+        ]
+      }
+    }
+  }
+}
